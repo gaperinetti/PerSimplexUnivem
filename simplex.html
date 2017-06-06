@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Simplex</title>
+    <meta charset="utf-8">
+    <script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="ui inverted menu">
+      <a class="item" href="index.html"><i class="red travel icon"></i> Voltar  </a>
+      
+    </div>
+      <div class="ui container">
+      <div class="ui two column centered grid">
+        <div class="column">
+          <div id="error"></div>
+          <h2 class="ui header">
+            <i class="huge red signup icon"></i>
+            <div class="content ui teal header">
+              PerSimplex
+            </div>
+          </h2>
+        <div class="ui form">
+          <div class="fields">
+           <div class="field">
+             <label>Iterações</label>
+             <input type="number" name="interate" class="tooltipped" id="interate" placeholder="Quantidade maxima de Interações"/>
+           </div>
+           <div class="field">
+             <div class="grouped fields">
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="ztypeMax" name="inputZtype" value="max" checked/>
+                    <label for="ztypeMax">Maximizar</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" id="ztypeMin" name="inputZtype" value="min"/>
+                   <label for="ztypeMin">Minimizar</label>
+                  </div>
+                </div>
+              </div>
+           </div>
+         </div>
+          <div class="field">
+            <h5>Função z</h5>
+            <input type="text" name="zFunction" id="zFunction" placeholder="EXEMPLO: Para digitar: '3x1 + 5x2', digite: '3;5'" />
+          </div>
+          <div class="field">
+            <div id ="restrictionVariable">
+              <span><strong> Variaveis de Restrição<strong></span><a onclick="addSubjects();" class="init" ><i class="circular red add circle icon"></i></a>
+            </div>
+          </div>
+          <div id="subjects">
+  
+          </div>
+
+          <button class="fluid ui button" onclick="simplexResumo()">Calcular (Resultado Final)</button>
+          <br/>
+          <button class="fluid ui button" onclick="simplexExpandido()">Calcular (Passo a Passo)</button>
+       </div>
+       <div id="tables"></div>
+       <div id="post-optimization"></div>
+       <div id="sensibility-analysis"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="js/simplex.js"></script>
+  <script src="js/style.js"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  </body>
+</html>
