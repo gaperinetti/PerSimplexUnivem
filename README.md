@@ -4,10 +4,10 @@
 Persimplex é capaz de resolver problemas de programação linear, possibilitando o usuário maximizar ou minimizar modelos de simplex, porém possibilita apenas restrições do tipo "<=". O mesmo apresenta o cálculo somente com o resultado final ou passo a passo, possibilitando um maior estudo sobre o problema, bem como a demonstração da analise de sensibilidade.
 
 Os alunos responsáveis pelo projeto foram:
-Gabriel Valente Perinetti		RA: 52131-0
-Fábio Gregorio Cupertino		RA: 39880-2
-Pedro Henrique Abelha		RA: 47047-3
-Samuel Pereira de Oliveira	RA: 54982-7
+- Gabriel Valente Perinetti	RA: 52131-0
+- Fábio Gregorio Cupertino	RA: 39880-2
+- Pedro Henrique Abelha		RA: 47047-3
+- Samuel Pereira de Oliveira	RA: 54982-7
 
 ## NOTA DE RELEASE A SER PUBLICADO
 - Algoritmo Simplex para problemas de maximização
